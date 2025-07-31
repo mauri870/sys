@@ -17,8 +17,8 @@ WORKDIR /git
 RUN git config --global advice.detachedHead false
 # Linux Kernel: Released 24 Mar 2025
 RUN git clone --branch v6.14 --depth 1 https://kernel.googlesource.com/pub/scm/linux/kernel/git/torvalds/linux
-# GNU C library: Released 29 Jan 2025
-RUN git clone --branch release/2.41/master --depth 1 https://sourceware.org/git/glibc.git
+# GNU C library: Released 27 Jul 2025
+RUN git clone --branch release/2.42/master --depth 1 https://sourceware.org/git/glibc.git
 
 # Get Go
 ENV GOLANG_VERSION=1.24.3
